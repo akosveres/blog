@@ -28,7 +28,6 @@ exclude:
   - LICENSE.txt
   - CHANGELOG.md
   - jekyll-whiteglass.gemspec
-  - screenshot.png
   - vendor
 
 # Social media
