@@ -17,7 +17,7 @@ title: "@Puck - Akos Veres"
 author: puck
 description: Music, IT, any random stuff I come to post about.
 #baseurl: "/whiteglass" # the subpath of your site, e.g. /blog
-url: "https://akos.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://akos.me" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: GMT
 exclude:
