@@ -1,5 +1,6 @@
 ---
 layout: post
+category: radio, xtradio
 ---
 At [XTRadio][xtradio] we thought of taking our stream to a new platform (or even more), the first obvious choice was Youtube Live. Facebook Live could be another option but it only allows 4 continous hours of stream, so it wouldn't allow us to stream our 24/7 broadcast.
 
