@@ -38,8 +38,7 @@ facebook_image:
 google_analytics:
 
 # Plugins
-gems:
-  - jekyll-archives
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 

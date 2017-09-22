@@ -5,7 +5,7 @@ category: jekyll
 
 Just a small snipet on how to send data to [TuneIn's AirAPI](http://tunein.com/broadcasters/api/) from golang. This way you can update your metadata information directly from your API, if you wish.
 
-{% highlight golang }
+{% highlight golang %}
 import (
     "fmt"
     "net/http"
