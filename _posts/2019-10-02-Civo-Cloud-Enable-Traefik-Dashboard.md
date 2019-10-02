@@ -8,7 +8,7 @@ In this post I wanted to showcase how you can get the `traefik dashboard` enable
 
 The k3s cluster has been setup following the [civo kubernetes guide](https://www.civo.com/learn/kubernetes-cluster-administration-using-civo-cli).
 
-The default helm chart has the dashboard disabled by default. The default options can be seen on [the helm chart github page(https://github.com/helm/charts/tree/master/stable/traefik#configuration)]. The `toml` file is stored as a configmap, we can just simply overwrite it:
+The default helm chart has the dashboard disabled by default. The default options can be seen on [the helm chart github page](https://github.com/helm/charts/tree/master/stable/traefik#configuration). The `toml` file is stored as a configmap, we can just simply overwrite it:
 
 <!-- more -->
 
