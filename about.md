@@ -10,7 +10,9 @@ Links:
 - [XTRadio][xtradio]
 - [Github][github]
 - [Twitter][twitter]
+- [Github][github]
 
 [xtradio]: https://xtradio.org
 [github]: https://github.com/akosveres
 [twitter]: https://twitter.com/puck
+[github]: https://github.com/akosveres
