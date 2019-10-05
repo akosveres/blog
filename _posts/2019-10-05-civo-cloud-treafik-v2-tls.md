@@ -4,6 +4,8 @@ category: [civo, kubernetes]
 title: "Civo Cloud k3s: Traefik v2 and Let's Encrypt"
 ---
 
+![Traefik Dashboard on Civo k3s with SSL](/assets/civo-traefik-ssl.png)
+
 # Overview
 
 I've continued to play around with the K3S Beta cluster from Civo Cloud (you can request to [join the beta](https://www.civo.com/kube100)), the aim was to also try out the new [Traefik V2](https://blog.containo.us/traefik-2-0-6531ec5196c2) which was released some time ago.
@@ -11,11 +13,9 @@ I've continued to play around with the K3S Beta cluster from Civo Cloud (you can
 In this post we will:
 * Update the default traefik install on k3s to v2.0.1
 * Secure the k3s install
-* Create and secure the ingress to the trafik dashboard
+* Create and secure the ingress to the traefik dashboard
 * Enable `Let's Encrypt` certs for traefik
 * Some thoughts after the journey
-
-![Traefik Dashboard on Civo k3s with SSL](/assets/civo-traefik-ssl.png)
 
 <!--more-->
 
