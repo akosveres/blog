@@ -223,3 +223,5 @@ The last step is to actually point your domain to your Civo Kubernetes endpoint 
 {% highlight bash %}
 civo kubernetes show <name of the cluster> | grep API
 {% endhighlight %}
+
+If you want to use Traefik v2, please check out [this blog post]({% post_url 2019-10-15-civo-cloud-traefik-v2-tls %}).
