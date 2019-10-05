@@ -15,7 +15,7 @@ In this post we will:
 * Enable `Let's Encrypt` certs for traefik
 * Some thoughts after the journey
 
-![Traefik Dashboard on Civo k3s with SSL](/assets/civo-treafik-ssl.png)
+![Traefik Dashboard on Civo k3s with SSL](/assets/civo-traefik-ssl.png)
 
 <!--more-->
 
