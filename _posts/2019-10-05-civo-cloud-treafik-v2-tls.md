@@ -17,6 +17,8 @@ In this post we will:
 * Enable `Let's Encrypt` certs for traefik
 * Some thoughts after the journey
 
+Let's start.
+
 <!--more-->
 
 ## Update Traefik to V2
