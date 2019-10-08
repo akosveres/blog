@@ -346,7 +346,7 @@ Let's apply it:
 kubectl apply -f traefik-ingress-dashboard.yaml
 ```
 
-There we go, if you visit http://<your-domain> you should be presented with basic auth, use your username and password and voila, the new great Traefik Dashboard will appear! Feel free to get used to the new layout and all the new information presented (I do miss the statistics, if I'm honest).
+There we go, if you visit http://`your-domain` you should be presented with basic auth, use your username and password and voila, the new great Traefik Dashboard will appear! Feel free to get used to the new layout and all the new information presented (I do miss the statistics, if I'm honest).
 
 ## Enable Let's Encrypt
 
@@ -427,24 +427,10 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: traefik-dashboard
+  kube-system
 spec:
   entryPoints:
     - web
-  routes:
-  - match: Host(`<your-domain.fqdn>`)
-    kind: Rule
-    services:
-    - name: traefik
-      port: 8080
-    middlewares:
-      - name: test-auth
----
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
-metadata:
-  name: traefik-dashboard-https
-spec:
-  entryPoints:
     - websecure
   routes:
   - match: Host(`<your-domain.fqdn>`)
@@ -454,8 +440,6 @@ spec:
       port: 8080
     middlewares:
       - name: test-auth
-  tls:
-    certResolver: default
 ```
 
 The difference between the two `IngressRoute`s are:
@@ -468,7 +452,7 @@ Let's apply:
 kubectl apply -f traefik-ingress-deployment.yaml
 ```
 
-Once you go to https://<your-domain.fqdn> you should be presented with the basic auth, once you log in, the dashboard should present its self behind SSL in all of its glory! Congratulations, we have achieved something great today!
+Once you go to https://`your-domain.fqdn` you should be presented with the basic auth, once you log in, the dashboard should present its self behind SSL in all of its glory! Congratulations, we have achieved something great today!
 
 ## Some thoughts after the journey
 
