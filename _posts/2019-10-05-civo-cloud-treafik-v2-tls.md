@@ -328,11 +328,12 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: traefik-dashboard
+  namespace: kube-system
 spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`<your-domain>`)
+  - match: Host(`<your-domain.fqdn>`)
     kind: Rule
     services:
     - name: traefik
@@ -346,7 +347,7 @@ Let's apply it:
 kubectl apply -f traefik-ingress-dashboard.yaml
 ```
 
-There we go, if you visit http://`your-domain` you should be presented with basic auth, use your username and password and voila, the new great Traefik Dashboard will appear! Feel free to get used to the new layout and all the new information presented (I do miss the statistics, if I'm honest).
+There we go, if you visit http://`your-domain.fqdn` you should be presented with basic auth, use your username and password and voila, the new great Traefik Dashboard will appear! Feel free to get used to the new layout and all the new information presented (I do miss the statistics, if I'm honest).
 
 ## Enable Let's Encrypt
 
@@ -427,7 +428,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: traefik-dashboard
-  kube-system
+  namespace: kube-system
 spec:
   entryPoints:
     - web
