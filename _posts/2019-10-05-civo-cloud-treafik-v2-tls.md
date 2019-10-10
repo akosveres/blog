@@ -6,8 +6,6 @@ title: "Civo Cloud k3s: Traefik v2 and Let's Encrypt"
 
 ![Traefik Dashboard on Civo k3s with SSL](/assets/civo-traefik-ssl.png)
 
-# Overview
-
 I've continued to play around with the K3S Beta cluster from Civo Cloud (you can request to [join the beta](https://www.civo.com/kube100)), the aim was to also try out the new [Traefik V2](https://blog.containo.us/traefik-2-0-6531ec5196c2) which was released some time ago.
 
 In this post we will:
